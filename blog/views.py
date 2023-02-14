@@ -103,11 +103,10 @@ class PostUpdate(LoginRequiredMixin, UpdateView):
 
 
 
-def category_page(request,slug): # slug는 일반적으로 이미 얻은 데이터를 사용하여 유효한 url을 생성하는 방법
-    if slug == 'no category':
+def category_page(request, slug):
+    if slug == 'no_category':
         category = '미분류'
         post_list = Post.objects.filter(category=None)
-    
     else:
         category = Category.objects.get(slug=slug)
         post_list = Post.objects.filter(category=category)
@@ -116,10 +115,10 @@ def category_page(request,slug): # slug는 일반적으로 이미 얻은 데이�
         request,
         'blog/post_list.html',
         {
-            'post_list':post_list,
+            'post_list': post_list,
             'categories': Category.objects.all(),
-            'no_category_post_count':Post.objects.filter(category=None).count(),
-            'category':category,
+            'no_category_post_count': Post.objects.filter(category=None).count(),
+            'category': category,
         }
     )
 def tag_page(request, slug):

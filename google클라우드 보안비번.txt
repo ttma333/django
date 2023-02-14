@@ -1,0 +1,7 @@
+구글cloudID: 
+- 270448427653-3oulqotk64kiirglc5jbtla4rnuideng.apps.googleusercontent.com
+
+보안비밀번호 
+- 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
+
+참고할 사이트 : https://shanepark.tistory.com/63
