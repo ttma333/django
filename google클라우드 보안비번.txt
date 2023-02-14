@@ -5,3 +5,7 @@
 - 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
 
 참고할 사이트 : https://shanepark.tistory.com/63
+
+내도메인: http://khjttma.kro.kr:8000/
+
+http://127.0.0.1:8000/accounts/google/login/callback/

@@ -1,4 +1,3 @@
-{% include 'blog/navbar.html'%}
 <!DOCTYPE html>{% load static%}
 <html lang="en">
 <head>
@@ -11,10 +10,11 @@
     <script src="https://kit.fontawesome.com/09b6fa9fcd.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    {% include 'blog/navbar.html'%}
     <section class="margin-for-footer">
         <div class="container mt-t">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-9">
                     <h1>Data Specialist KHJ</h1>
                     <br>
                     <ul>
@@ -24,6 +24,9 @@
                         <li>니</li>
                         <li>다</li>
                     </ul>
+                </div>
+                <div class="col-lg-3 mt-9">
+                    <img class="img-fuild" width="250" src="{%static 'homepage/image/bono.jpg'%}">
                 </div>
             </div>
         </div>
